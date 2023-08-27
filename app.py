@@ -32,11 +32,14 @@ def resend_webhook():
 
 @app.route("/version", methods=['POST'])
 def version():
-    url  = "https://kc-frontback.azurewebsites.net/api/version"
-    res = requests.post(url)
-    response = json.loads(res.text)
-    print(res.text)
-    return response
+    # url  = "https://kc-frontback.azurewebsites.net/api/version"
+    # res = requests.post(url)
+    # response = json.loads(res.text)
+    # print(res.text)
+    return {
+        "version":'1.0.0',
+        "project":"pypro"
+    }
 
 @app.route("/exe4crud", methods=['POST'])
 def exe4crud():
