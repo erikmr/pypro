@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-   <div style="background-color: darkgray;"> Hola Mundo </div> 
+   <div style="background-color: darkgray;"> 
+    Hola Mundo 
+
+    {% if num_posts %}
+        Modificando el post {{ num_posts }}
+    {% else %}
+        Nuevo post
+    {% endif %}
+    </div> 
 </body>
 </html>
