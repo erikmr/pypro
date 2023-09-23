@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():  
-    hora_actual = datetimepipreqs.now()
+    hora_actual = datetime.now()
     return render_template("index.html",hora_actual=hora_actual)
 
 @app.route('/send_mail')
