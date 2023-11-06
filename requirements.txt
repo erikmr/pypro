@@ -17,3 +17,4 @@ urllib3==2.0.4
 watchdog==3.0.0
 Werkzeug==2.3.7
 yarg==0.1.9
+flask-cors==4.0.0

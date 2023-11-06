@@ -1,0 +1,123 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Confirmación Vacuna Influenza</title>
+    <style type="text/css">
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+        }
+      
+    </style>
+
+</head>
+
+<body style="background-color: #E5E5E5;margin: 0; padding: 0;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0"  style=" background-color: #FFFFFF;border-collapse: collapse; border: 1px solid #CFCFCF;">
+        <tr>
+            <td align="center" >
+                <img src="https://www.vacunainfluenza.com.mx/assets/logo_300.png"
+                    alt="Me cuido Concientemente" width="300px" style="display: block;margin-top: 10px;" />
+       
+            </td>
+        </tr>
+        <tr>
+            <td align="center"  bgcolor="#ffffff" >
+                <table border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse;" cellpadding="10px">
+                    <tr>
+                        <td >
+
+                            <table style="background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 58.33%, #F2F2F2 100%);
+                            box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.06), 0px 1px 10px rgba(0, 0, 0, 0.06);
+                            border: 1px solid #E5E5E5; border-radius: 10px; margin-top: 40px;" >
+                                <tr>
+                                    <td style="font-style: normal;
+                                    font-family: Arial, sans-serif; 
+                                    font-weight: 900;
+                                    font-size: 18px;
+                                    width: 100%;
+                                    text-align: center;
+                                    color: #E65100; padding: 20px;">
+
+                                        Fechas y sedes que registraste para recibir la vacuna influenza:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <table  cellpadding="0" cellspacing="0"  style=" margin: 10px; font-size: 1em; font-family: sans-serif; min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);border-right: 1px solid rgb(112, 112, 112);color: rgb(4, 3, 3);"> 
+                                            <thead>
+                                                <th style="padding: 10px;border-top: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); border-left: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); background-color: #CFCFCF;"> Nombre</th>
+                                                <th style="padding: 10px;border-top: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); border-left: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); background-color: #CFCFCF;"> ¿Recibe Vacuna?</th>
+                                                <th style="padding: 10px;border-top: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); border-left: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); background-color: #CFCFCF;"> Sede</th>
+                                                <th style="padding: 10px;border-top: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); border-left: 1px solid rgb(112, 112, 112);color: rgb(69, 67, 67); background-color: #CFCFCF;"> Fecha</th>
+                                            </thead>
+                                        <tbody>
+                                            {% for ele in data %}
+                                            <tr >
+                                                <td style="padding:5px; border-bottom: 1px solid rgb(112, 112, 112);border-bottom: 1px solid rgb(112, 112, 112);border-left: 1px solid rgb(112, 112, 112);color: rgb(4, 3, 3);">{{ele['Nombre']}}</td>
+                                                <td style="padding:5px; border-bottom: 1px solid rgb(112, 112, 112);border-bottom: 1px solid rgb(112, 112, 112);border-left: 1px solid rgb(112, 112, 112);color: rgb(4, 3, 3);text-align: center;">{{ele['Recibe_Vacuna']}}</td>
+                                                <td style="padding:5px; border-bottom: 1px solid rgb(112, 112, 112);border-bottom: 1px solid rgb(112, 112, 112);border-left: 1px solid rgb(112, 112, 112);color: rgb(4, 3, 3);text-align: center;" > {{ele['Estado']}} - {{ele['Ciudad']}}</td>
+                                                <td style="padding:5px; border-bottom: 1px solid rgb(112, 112, 112);border-bottom: 1px solid rgb(112, 112, 112);border-left: 1px solid rgb(112, 112, 112);color: rgb(4, 3, 3);text-align: center;">{{ele['Fecha']}}</td>
+
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+ 
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="
+            color: #E65100; font-family: Arial, sans-serif; 
+            font-size: 16px; 
+            line-height: 24px; 
+            text-align: center;">
+                <p style="margin: 50px;">
+                    Estás recibiendo este correo porque registraste una o varias sedes para recibir la vacuna influenza 
+                </p>
+                <hr>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td bgcolor="#FF6710" style="padding: 30px 30px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="border-collapse: collapse;">
+
+                    <tr>
+                        <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px;">
+                            *Este correo es generado de forma automática, por favor no respondas a este remitente.
+                        </td>
+                        <td align="right">
+                            <table border="0" cellpadding="0" cellspacing="0"
+                                style="border-collapse: collapse;color: #ffffff; font-family: Arial, sans-serif; font-size: 12px;">
+                                <tr>
+                                    <td>
+                                        Aplicación Vacuna Influenza 2023
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
