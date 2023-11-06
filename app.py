@@ -9,8 +9,7 @@ from flask_cors import CORS,cross_origin
 resend.api_key = "re_j7FZ9Rme_4ov44DUobE17FZQEeHR1P46v"
 
 app = Flask(__name__,static_url_path='/static')
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
-@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+CORS(app)
 @app.route('/')
 def index():  
     hora_actual = datetime.now()
